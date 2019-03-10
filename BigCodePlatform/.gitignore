@@ -1,0 +1,10 @@
+build/
+bin/
+
+*.class
+*.tmp
+.settings
+.project
+.classpath
+
+

@@ -1,13 +1,15 @@
 package bigcode.repository.sourcecode.model;
 
+import java.util.Objects;
+
 public final class ContentHash {
 
 	private final HashType type;
 	private final String value;
 	
 	public ContentHash(HashType type, String value) {
-		this.type = type;
-		this.value = value;
+		this.type = Objects.requireNonNull(type, "Hashcode type can't be null");
+		this.value = Objects.requireNonNull(value, "Value can't be null");
 	}
 	
 	public static ContentHash parse(String stringValue) {
@@ -16,7 +18,7 @@ public final class ContentHash {
 
 	@Override
 	public String toString() {
-		return type + ":" + value;
+		return type.getAlgorithmName() + ":" + value;
 	}
 
 	public HashType getType() {

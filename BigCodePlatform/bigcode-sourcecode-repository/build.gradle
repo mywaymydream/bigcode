@@ -30,6 +30,9 @@ dependencies {
     implementation 'com.google.guava:guava:23.0'
     
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    
+    implementation 'commons-codec:commons-codec:1.12'
+    
 
     // Use JUnit test framework
     testImplementation 'org.junit.jupiter:junit-jupiter:5.4.0'
