@@ -18,46 +18,48 @@ import bigcode.repository.sourcecode.rest.dto.SnapshotMissedContentDto;
 @RestController
 @RequestMapping("/project/{projectId}/repository/{repositoryId}/snapshot")
 public class SnapshotController {
-
-	@GetMapping("/{id}")
-	public SnapshotDto getById(@PathVariable("projectId") String projectId,
-			                   @PathVariable("repositoryId") String repositoryId,
-			                   @PathVariable("id") String id) {
-		return new SnapshotDto();
-	}
-	
-	@PutMapping("/{snapshotId}")
-	public SnapshotDto createSnapshotWithCustomId(@PathVariable("projectId") String projectId,
+    
+    @GetMapping("/{id}")
+    public SnapshotDto getById(@PathVariable("projectId") String projectId,
+                               @PathVariable("repositoryId") String repositoryId,
+                               @PathVariable("id") String id) {
+        return new SnapshotDto();
+    }
+    
+    @PutMapping("/{snapshotId}")
+    public SnapshotDto createSnapshotWithCustomId(@PathVariable("projectId") String projectId,
                                                   @PathVariable("repositoryId") String repositoryId,
                                                   @PathVariable("snapshotId") String snapshotId,
                                                   @RequestBody NewSnapshotDto newSnapshot) {
-		return new SnapshotDto();
-	}
-	
-	/**
-	 * The client upload computed snapshot. This information could be computed during project building.
-	 * 
-	 * @param projectId
-	 * @param repositoryId
-	 * @param newSnapshot
-	 * @return
-	 */
-	@PostMapping
-	public SnapshotDto newSnapshot(@PathVariable("projectId") String projectId,
+        return new SnapshotDto();
+    }
+    
+    /**
+     * The client upload computed snapshot. This information could be computed during project
+     * building.
+     * 
+     * @param  projectId
+     * @param  repositoryId
+     * @param  newSnapshot
+     * @return
+     */
+    @PostMapping
+    public SnapshotDto newSnapshot(@PathVariable("projectId") String projectId,
                                    @PathVariable("repositoryId") String repositoryId,
                                    @RequestBody NewSnapshotDto newSnapshot) {
-		return new SnapshotDto();
-	}
-	
-	/**
-	 * Client could request the list of missed content hashes. 
-	 * @return
-	 */
-	@GetMapping("/{snapshotId}")
-	public SnapshotMissedContentDto missedContent(@PathVariable("projectId") String projectId,
+        return new SnapshotDto();
+    }
+    
+    /**
+     * Client could request the list of missed content hashes.
+     * 
+     * @return
+     */
+    @GetMapping("/{snapshotId}")
+    public SnapshotMissedContentDto missedContent(@PathVariable("projectId") String projectId,
                                                   @PathVariable("repositoryId") String repositoryId,
                                                   @PathVariable("snapshotId") String snapshotId) {
-		return new SnapshotMissedContentDto();
-	}
-	
+        return new SnapshotMissedContentDto();
+    }
+    
 }

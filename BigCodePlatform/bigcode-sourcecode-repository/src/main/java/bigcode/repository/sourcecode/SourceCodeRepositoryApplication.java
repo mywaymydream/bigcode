@@ -5,8 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SourceCodeRepositoryApplication {
-
-	public static void main(String...args) {
-		SpringApplication.run(SourceCodeRepositoryApplication.class, args);
-	}
+    
+    public static void main(String... args) {
+        SpringApplication.run(
+                              SourceCodeRepositoryApplication.class,
+                              args);
+    }
 }

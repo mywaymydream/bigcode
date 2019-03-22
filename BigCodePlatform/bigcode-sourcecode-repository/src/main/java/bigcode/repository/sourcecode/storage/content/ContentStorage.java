@@ -5,9 +5,7 @@ import java.io.InputStream;
 import bigcode.repository.sourcecode.model.ContentHash;
 
 public interface ContentStorage {
-
-
-
-	void save(ContentHash hash, InputStream input);
-	
+    
+    void save(ContentHash hash, InputStream input);
+    
 }

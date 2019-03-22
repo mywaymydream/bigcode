@@ -8,11 +8,10 @@ import bigcode.repository.sourcecode.rest.dto.RepositoryDto;
 
 @RestController
 public class RepositoryController {
-
-	
-	@GetMapping("/project/{projectId}/repository/{id}")
-	public RepositoryDto getById(@PathVariable("projectId") String projectId,
-			                            @PathVariable("id") String repositoryId) {
-		return new RepositoryDto();
-	}
+    
+    @GetMapping("/project/{projectId}/repository/{id}")
+    public RepositoryDto getById(@PathVariable("projectId") String projectId,
+                                 @PathVariable("id") String repositoryId) {
+        return new RepositoryDto();
+    }
 }

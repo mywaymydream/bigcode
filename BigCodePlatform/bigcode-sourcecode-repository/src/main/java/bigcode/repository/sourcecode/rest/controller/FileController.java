@@ -10,15 +10,13 @@ import bigcode.repository.sourcecode.rest.dto.FileDto;
 @RestController
 @RequestMapping("/project/{projectId}/repository/{repositoryId}/snapshot/{snapshotId}/file")
 public class FileController {
-
-	@GetMapping("/{id}")
-	public FileDto getFile(@PathVariable("projectId") String projectId,
+    
+    @GetMapping("/{id}")
+    public FileDto getFile(@PathVariable("projectId") String projectId,
                            @PathVariable("repositoryId") String repositoryId,
                            @PathVariable("snapshotId") String snapshotId,
                            @PathVariable("id") String fileId) {
-		return new FileDto();
-	}
-	
-	
+        return new FileDto();
+    }
+    
 }
-

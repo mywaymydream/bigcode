@@ -10,12 +10,10 @@ import bigcode.repository.sourcecode.rest.dto.ProjectDto;
 @RestController
 @RequestMapping("/project")
 public class ProjectController {
-
-
-	@GetMapping("/{id}")
-	public ProjectDto getById(@PathVariable("id") String id) {
-		return new ProjectDto();
-	}
-	
-	
+    
+    @GetMapping("/{id}")
+    public ProjectDto getById(@PathVariable("id") String id) {
+        return new ProjectDto();
+    }
+    
 }
