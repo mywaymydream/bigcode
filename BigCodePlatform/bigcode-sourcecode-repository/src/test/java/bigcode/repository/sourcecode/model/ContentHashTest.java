@@ -39,7 +39,7 @@ public class ContentHashTest {
 	public void diffentObjectsWithTheSameHashType() {
 		//given
 		ContentHash contentHash2 = new ContentHash(HashType.SHA256, sha256("Test value 2"));
-		ContentHash contentHash1 = new ContentHash(HashType.SHA256, sha256("Test value 1"));
+        ContentHash contentHash1 = new ContentHash(HashType.SHA256, sha256("Test value 1"));
 		//then
 		assertFalse(contentHash1.equals(contentHash2));
 		assertFalse(contentHash2.equals(contentHash1));
