@@ -33,12 +33,14 @@ public class HashTypeTest {
         assertFalse(testInstance.validate(hashCode));
     }
 
+    @SuppressWarnings("unused") // used as method source. see @MethodSource annotation
     private static Stream<Arguments> allExpectedAlgorithmNames() {
         return Stream.of(
                          of(HashType.SHA256, "sha256"),
                          of(HashType.SHA512, "sha512"));
     }
 
+    @SuppressWarnings("unused") // used as method source. see @MethodSource annotation
     private static Stream<Arguments> validHashCodes() {
         return Stream.of(
                          of(HashType.SHA256, sha256Hex("value").toUpperCase()),
@@ -47,6 +49,7 @@ public class HashTypeTest {
                          of(HashType.SHA512, sha512Hex("value").toLowerCase()));
     }
 
+    @SuppressWarnings("unused") // used as method source. see @MethodSource annotation
     private static Stream<Arguments> invalidHashCodes() {
         return Stream.of(
                          of(HashType.SHA256, null),
