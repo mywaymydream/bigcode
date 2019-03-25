@@ -1,0 +1,8 @@
+version: '3'
+services:
+   bigcode-platform-builder: 
+      build:
+         context: ./builder
+         dockerfile: builder.Dockerfile
+      volumes:
+         - ../:/app/workspace

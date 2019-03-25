@@ -27,6 +27,7 @@ gensrc
 
 .sonar
 .gradle
+.wrapper
 .vagrant
 *.log
 
@@ -34,3 +35,5 @@ gensrc
 
 node_modules/
 .vscode/
+
+
