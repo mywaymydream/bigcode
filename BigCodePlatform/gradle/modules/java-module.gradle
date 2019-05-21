@@ -1,0 +1,16 @@
+
+
+apply from:"${project.rootDir}/gradle/java.gradle"
+apply from:"${project.rootDir}/gradle/ide.gradle"
+apply from:"${project.rootDir}/gradle/test.gradle"
+
+dependencies {
+    // Use JUnit test framework
+    testImplementation testLibs.junit
+    
+    //Mockito framework
+    testImplementation testLibs.mockito
+    testImplementation testLibs.mockitoJUnit
+    
+}
+

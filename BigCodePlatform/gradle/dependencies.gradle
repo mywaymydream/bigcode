@@ -1,0 +1,23 @@
+
+ext {
+
+    libsVerions = [
+        junit : "5.4.0",
+        mockito: "2.27.0",
+        springBoot: "2.1.5.RELEASE",
+        commonCodec : "1.12"
+    ]
+    libs = [
+        commonCodec : "commons-codec:commons-codec:${libsVerions.commonCodec}"
+    ]
+    testLibs = [
+        junit : "org.junit.jupiter:junit-jupiter:${libsVerions.junit}", 
+        mockito : "org.mockito:mockito-core:${libsVerions.mockito}",
+        mockitoJUnit: "org.mockito:mockito-junit-jupiter:${libsVerions.mockito}"
+    ]
+    
+    pluginLibs = [
+        springBootPlugin : "org.springframework.boot:spring-boot-gradle-plugin:${libsVerions.springBoot}"
+    ]
+    
+}
