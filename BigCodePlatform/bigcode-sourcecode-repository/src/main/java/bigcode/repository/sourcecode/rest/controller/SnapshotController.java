@@ -1,6 +1,8 @@
 package bigcode.repository.sourcecode.rest.controller;
 
-import java.util.List;
+import bigcode.repository.sourcecode.rest.dto.NewSnapshotDto;
+import bigcode.repository.sourcecode.rest.dto.SnapshotDto;
+import bigcode.repository.sourcecode.rest.dto.SnapshotMissedContentDto;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,11 +11,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import bigcode.repository.sourcecode.rest.dto.FilesListDto;
-import bigcode.repository.sourcecode.rest.dto.NewSnapshotDto;
-import bigcode.repository.sourcecode.rest.dto.SnapshotDto;
-import bigcode.repository.sourcecode.rest.dto.SnapshotMissedContentDto;
 
 @RestController
 @RequestMapping("/project/{projectId}/repository/{repositoryId}/snapshot")
